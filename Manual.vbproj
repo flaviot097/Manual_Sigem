@@ -146,6 +146,7 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtraerDatosExel.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

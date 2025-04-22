@@ -2,6 +2,7 @@
     Private Sub btnIniciarManual_Click(sender As Object, e As EventArgs) Handles btnIniciarManual.Click
         Dim manualMenus As New ManualMenu()
         manualMenus.Show()
+        Me.Hide()
 
     End Sub
 

@@ -21,6 +21,11 @@ Public Class VisorManualCompleto
         printPdf.Print()
 
     End Sub
+
+    Private Sub VisorManualCompleto_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Dim manualMenu As ManualMenu = New ManualMenu()
+        manualMenu.Show()
+    End Sub
 End Class
 
 'Dim proceso As New Process()

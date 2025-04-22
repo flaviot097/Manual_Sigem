@@ -73,6 +73,8 @@ Partial Class Secciones
         '
         'txtSeccion
         '
+        Me.txtSeccion.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtSeccion.Location = New System.Drawing.Point(98, 60)
         Me.txtSeccion.Name = "txtSeccion"
         Me.txtSeccion.Size = New System.Drawing.Size(451, 20)
@@ -80,6 +82,7 @@ Partial Class Secciones
         '
         'btnBuscarSeccion
         '
+        Me.btnBuscarSeccion.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnBuscarSeccion.BackColor = System.Drawing.SystemColors.Highlight
         Me.btnBuscarSeccion.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnBuscarSeccion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -93,6 +96,7 @@ Partial Class Secciones
         '
         'btnTodaSecciones
         '
+        Me.btnTodaSecciones.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.btnTodaSecciones.Location = New System.Drawing.Point(294, 415)
         Me.btnTodaSecciones.Name = "btnTodaSecciones"
         Me.btnTodaSecciones.Size = New System.Drawing.Size(234, 23)
@@ -112,6 +116,7 @@ Partial Class Secciones
         Me.Controls.Add(Me.btnVolver)
         Me.Controls.Add(Me.grillaDatos)
         Me.Name = "Secciones"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Secciones"
         CType(Me.grillaDatos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
